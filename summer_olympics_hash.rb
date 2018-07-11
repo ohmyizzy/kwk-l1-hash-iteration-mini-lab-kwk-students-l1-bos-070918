@@ -4,11 +4,13 @@ def create_olympics_hash
   summer_olympics = {}
   summer_olympics[:Sydney] = "2000"
   summer_olympics[:Athens] = "2004"
-  summer_olympics[]
+  summer_olympics[:Beijing] = "2008"
+  summer_olympics[:London] = "2012"
 end
 
 def add_a_key_value_pair
   # Implement this method so that it adds a key value pair to the hash created in create_olympics_hash
+  
 end
 
 def iterate_through_hash
