@@ -21,7 +21,7 @@ def iterate_through_hash
   # and puts each key value pair within the phrase "The _____ summer olympics took place in _____."
   summer_olympics = add_a_key_value_pair
   summer_olympics.each do |key, value|
-    puts "The #{value} summer olympics took place in #{key.to_s}"
+    puts "The #{key.to_s} summer olympics took place in #{value}"
 end
 end
 
