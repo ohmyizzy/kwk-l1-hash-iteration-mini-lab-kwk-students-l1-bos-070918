@@ -20,14 +20,17 @@ def iterate_through_hash
   # Implement this method so that it iterates over the hash created in add_a_key_value_pair
   # and puts each key value pair within the phrase "The _____ summer olympics took place in _____."
   summer_olympics = add_a_key_value_pair
-  summer_olympics.each do |pair|
-    puts "The #{pair[1]} summer olympics took place in #{pair[0].to_s}"
+  summer_olympics.each do |key, value|
+    puts "The #{value} summer olympics took place in #{key.to_s}"
 end
 end
-
-iterate_through_hash
 
 def iterate_through_keys
   # Implement this method so that it converts the keys of the hash created in add_a_key_value_pair
   # into uppercased Strings, creates a new array with these values, and then puts each upcase key in the CLI
+  summer_olympics = add_a_key_value_pair
+  new_array = []
+  summer_olympics.each_key do |place|
+    new_array << place.upcase
+    puts place.upcase
 end
