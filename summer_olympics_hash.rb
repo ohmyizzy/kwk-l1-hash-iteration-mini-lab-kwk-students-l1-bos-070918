@@ -33,4 +33,5 @@ def iterate_through_keys
   summer_olympics.each_key do |place|
     new_array << place.upcase
     puts place.upcase
+  end
 end
